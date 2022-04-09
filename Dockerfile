@@ -37,9 +37,7 @@ ADD etc/entry.sh "${HOMEDIR}/entry.sh"
 
 RUN mkdir ${STEAMAPPDIR} && \
     chown -R "${USER}:${USER}" "${HOMEDIR}/entry.sh" "${STEAMAPPDIR}" && \
-    chmod +x "${HOMEDIR}/entry.sh" && \
-    ./steamcmd.sh +force_install_dir ${STEAMAPPDIR} +login anonymous +app_update 1964150 +quit && \
-    chown -R "${USER}:${USER}" "${STEAMAPPDIR}" 
+    chmod +x "${HOMEDIR}/entry.sh" 
 
 USER ${USER}
 

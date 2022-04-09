@@ -30,5 +30,5 @@ echo -e "[Server]\n" \
 
   chown -R "${USER}:${USER}" $CONFIGFILE
 fi
-bash ${HOME}/steamdcmd/steamcmd.sh +force_install_dir ${STEAMAPPDIR} +login anonymous +app_update 1964150 +quit
+bash ${HOME}/steamcmd/steamcmd.sh +force_install_dir ${STEAMAPPDIR} +login anonymous +app_update 1964150 +quit
 ${STEAMAPPDIR}/PerfectHeist2/Binaries/Linux/PerfectHeist2Server ${MAPNAME} -Port=${SERVER_PORT} -QueryPort=${QUERY_PORT}
